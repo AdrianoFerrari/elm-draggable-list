@@ -20,13 +20,14 @@ initialModel =
 -- UPDATE
 
 type Action
-  = Test
+  = StartDrag Int
+  | StopDrag
 
 
 update : Action -> Model -> Model
 update action model =
   case action of
-    Test ->
+    _ ->
       model
 
 
